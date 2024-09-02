@@ -54,6 +54,13 @@
 
 
 
+      <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="text-center border p-4 rounded bg-light">
+      <p id="brReci"></p>
+    </div>
+  </div>
+
+
 
 <script>
 
@@ -248,7 +255,7 @@ const reci = {
 };
 const numberOfProperties = Object.keys(reci).length;
 
-console.log(numberOfProperties);
+$("#brReci").html("Broj neponzatih reči:"+numberOfProperties);
 $('#izvuci').click(function() {
   // Prikaži div sa dodatnim tekstom
   const keys = Object.keys(reci);
