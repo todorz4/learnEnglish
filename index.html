@@ -246,7 +246,9 @@ const reci = {
 
 
 };
-console.log(reci.length);
+const numberOfProperties = Object.keys(reci).length;
+
+console.log(numberOfProperties);
 $('#izvuci').click(function() {
   // Prikaži div sa dodatnim tekstom
   const keys = Object.keys(reci);
