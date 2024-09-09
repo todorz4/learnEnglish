@@ -28,14 +28,14 @@
 <div class="container col-12">
 
 <div class="row">
-<div class="container col-10 col-md-5 mt-5 mb-5" style="background-color: rgb(241, 252, 252); border-radius: 15px;">
+<div class="contaer col-10 col-md-5 mt-5 mb-5" style="background-color: rgb(241, 252, 252); border-radius: 15px;">
     <div class="col-9 col-md-5 mx-auto mt-5 mb-5">
         <div class="row">
-    <input type="button" id="izvuci" class="btn btn-primary mb-5 col-12" value="Izvuci reč na engleskom"/>
-    <input type="text" class="form-control col-12 mb-5" id="poljeRec" >
+    <put type="button" id="izvuci" class="btn btn-primary mb-5 col-12" value="Izvuci reč na engleskom"/>
+    <put type="text" class="form-control col-12 mb-5" id="poljeRec" >
 
-    <input type="button" id="prevedi" class="btn btn-primary mb-5 col-12" value="Prevedi"/>
-    <input type="text" class="form-control col-12" id="poljeRec2" >
+    <put type="button" id="prevedi" class="btn btn-primary mb-5 col-12" value="Prevedi"/>
+    <put type="text" class="form-control col-12" id="poljeRec2" >
 </div>
     </div>
 
@@ -43,14 +43,14 @@
 
 
 
-    <div class="container col-10 col-md-5 mt-5 mb-5" style="background-color: rgb(223, 243, 255); border-radius: 15px;">
+    <div class="contaer col-10 col-md-5 mt-5 mb-5" style="background-color: rgb(223, 243, 255); border-radius: 15px;">
         <div class="col-9 col-md-5 mx-auto mt-5 mb-5">
             <div class="row">
-        <input type="button" id="izvuci2" class="btn btn-primary mb-5 col-12" value="Izvuci reč na srpskom"/>
-        <input type="text" class="form-control col-12 mb-5" id="poljeRec11" >
+        <put type="button" id="izvuci2" class="btn btn-primary mb-5 col-12" value="Izvuci reč na srpskom"/>
+        <put type="text" class="form-control col-12 mb-5" id="poljeRec11" >
     
-        <input type="button" id="prevedi2" class="btn btn-primary mb-5 col-12" value="Prevedi"/>
-        <input type="text" class="form-control col-12" id="poljeRec22" >
+        <put type="button" id="prevedi2" class="btn btn-primary mb-5 col-12" value="Prevedi"/>
+        <put type="text" class="form-control col-12" id="poljeRec22" >
     </div>
         </div>
     
@@ -67,26 +67,26 @@
 
 const reci = {
      /* "noise": "buka",
-    "ceilling": "plafon",
+    "ceillg": "plafon",
     "broom": "metla",
     "basement": "podrum",
     "least": "najmanje",
     "fence": "ograda",
     "grass": "trava",
-    "growing": "rasti",
+    "growg": "rasti",
     "tight": "čvrsto, tesno",
     "bricks": "cigle",
     "swollen": "otekao",
     "curb": "ivičnjak",
     "hallway": "hodnik",
-    "nun": "monahinja",
+    "nun": "monahja",
     "fall out": "ispasti",
     "nodded": "klimnuti glavom",
     "temporary": "privremeni",
     "thick": "gusto",
     "straight": "ravno",
     "warm": "toplo",
-    "snoring": "hrkanje",
+    "snorg": "hrkanje",
     "separate": "odvojeno, zasebno",
     "is not my fault": "nije moja greška, krivica",
     "pick": "odabrati",
@@ -94,25 +94,25 @@ const reci = {
     "supposed": "pretpostavljani",
     "wild": "divlji",
     "belongs": "pripada",
-    "crossing": "prelaziti",
+    "crossg": "prelaziti",
     "load": "opterećenje",
     "alley": "sokak",
-    "passing": "prolazeći, prolazni, prelazni",
+    "passg": "prolazeći, prolazni, prelazni",
     "solution": "resenje",
     "own": "posedovati",
     "unless": "osim ako",
-    "kind":"vrsta",
-    "dust":"prasina",
+    "kd":"vrsta",
+    "dust":"prasa",
     "aisles,passage":"prolaz",
     "through":"kroz",
     "notice":"primetiti",
-    "floating":"plutajuci",
+    "floatg":"plutajuci",
     "sudden":"iznenada",
     "bones":"kosti",
-    "plucked":"iscupati, otkinuti",
+    "plucked":"iscupati, otkuti",
     "comb":"cesalj",
     "pretent":"pretvarati se",
-    "slant":"nagib,kosina",
+    "slant":"nagib,kosa",
     "uphill":"uzbrdo",
     "bunch":"hrpa,gomila",
     "board":"daska",
@@ -126,7 +126,7 @@ const reci = {
     "next to":"pored",
     "trolley":"kolica",
     "pill":"pilula",
-    "mention":"pominjati",
+    "mention":"pomjati",
    "defense":"odbrana",
     "defeat":"poraz",
     "vegetable":"povrce",
@@ -141,7 +141,7 @@ const reci = {
      "nightmare":"nocna mora",
      "borrow":"pozajmiti",
      "adjust":"podesiti",
-     "disability":"inalidnost,nesposobnost",
+     "disability":"alidnost,nesposobnost",
      "ensure":"osigurati,obezbediti",
      "funeral":"sahrana",
      "surround":"okruziti,opkoliti",
@@ -149,21 +149,21 @@ const reci = {
      "referral,direct":"upucivanje",
      "overwhelm":"preplaviti",
      "approve":"odobriti, slagati se",
-     "disgusting":"odvratan,gadan",
+     "disgustg":"odvratan,gadan",
      "transmission":"prenosenje,isporuka",
      "ant":"mrav",
-     "injection":"injekcija,ubrizgavanje",
+     "jection":"jekcija,ubrizgavanje",
      "pole":"stub,bandera",
      "harm":"povreda,steta",
      "disappear":"nestati",
      "cupboard":"ormaric",
      "unlawful":"nezakonito",
-     "equation":"jednacina",
+     "equation":"jednaca",
      "environmental":"ekoloski",
      "candle":"sveca",
      "unlike":"za razliku od, suprotno",
      "dependence":"zavisnost",
-     "independence":"nezavisnost",
+     "dependence":"nezavisnost",
      "nut":"orah",
      "artificial":"vestacki, izvestacen",
      "trivial":"prost,sitan,beznacajan",
@@ -268,7 +268,7 @@ const reci = {
     "inpossible":"nemoguce",
     "silent":"tihi,nemi",
     "soul":"dusa",
-    "issue":"pitanje",
+    "issue":"greska",
     "improve":"poboljsati",
     "introduces":"uvesti",
     "immediately":"odmah",
